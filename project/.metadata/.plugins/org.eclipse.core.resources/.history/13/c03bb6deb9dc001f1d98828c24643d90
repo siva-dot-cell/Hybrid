@@ -1,0 +1,106 @@
+package com.jala.qa.pageLayer;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class createEmployee {
+	
+	
+	@FindBy(id="FirstName")
+	WebElement firstName;
+	
+	@FindBy(id="LastName")
+	WebElement lastName;
+	
+	@FindBy(id="EmailId")
+	WebElement emailId;
+	
+	@FindBy(id="MobileNo")
+	WebElement mobileNumber;
+	
+	@FindBy(id="Date Of Birth")
+	WebElement dateOfBirth;
+	
+	@FindBy(id="rdbMale")
+	WebElement malebtn;
+	
+	@FindBy(id="rdbFemale")
+	WebElement femalebtn;
+	
+	
+	@FindBy(id="Address")
+	WebElement address;
+	
+	
+	@FindBy(id="CountryId")
+	WebElement country;
+	
+	@FindBy(id="CityId")
+	WebElement City;
+	
+	@FindBy(id="chkOtherCity")
+	WebElement othercity;
+	
+	@FindBy(id="chkSkill_6")
+	WebElement skill;
+	
+	@FindBy(xpath="//button[text()='Save']")
+	WebElement saveBtn;
+	
+	public void enterfirstName(String fName) {
+		firstName.sendKeys(fName);	
+	}
+	
+	public void entersecondName(String sName) {
+		lastName.sendKeys(sName);	
+	}
+	
+	public void enteremailId(String email) {
+		emailId.sendKeys(email);	
+	}
+	
+	public void entermobileNumber(String mobileNo) {
+		mobileNumber.sendKeys(mobileNo);
+	}
+	
+	public void enterdateOfBirth(String DateOfBirth ) {
+		dateOfBirth.sendKeys(DateOfBirth);
+	}
+	
+	public void entermalebtn(String rdbMale) {
+		malebtn.sendKeys(rdbMale);
+	}
+	
+	public void enterfemalebtn(String rdbFemale) {
+		femalebtn.sendKeys(rdbFemale);
+	}
+	
+	public void enteraddress(String Address) {
+		address.sendKeys(Address);
+	}
+	
+	public void entercountry(String CountryId) {
+		country.sendKeys(CountryId);
+	}
+	
+	public void enterCity(String CityId) {
+		City.sendKeys(CityId);
+	}
+	
+	public void enterothercity(String chkOtherCity ) {
+		othercity.sendKeys(chkOtherCity);
+	}
+	
+	public void enterskill(String chkSkill_6) {
+		skill.sendKeys(chkSkill_6);
+	}
+	
+	public void clickOnSaveBtn() {
+		saveBtn.click();
+	}
+	
+
+}
